@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>حساب السعر</title>
+</head>
+<body dir="rtl">
+    <div class="box">
+        <h1>حساب سعر منتج</h1>
+
+        <div class="amount">
+            <p>التغليف: <span id="packaging">0</span> جنية</p>
+            <p>الشحن: <span id="shipping">0</span> جنية</p>
+            <p>الترويج: <span id="promotion">0</span> جنية</p>
+            <p>استضافة موقع: <span id="hosting">0</span> جنية</p>
+            <h3>المجموع: <span id="total">0</span> جنية</h3>
+        </div>
+
+        <label>سعر المنتج</label>
+        <input type="number" id="product_price">
+
+        <label>سعر العملة</label>
+        <input type="number" id="currency" value="1">
+
+        <label>الربح</label>
+        <input type="number" id="profit">
+
+        <label>نسبة الخصم</label>
+        <input type="number" id="discount_rate">
+        <br>
+        <button onclick="calc()">إحسب</button>
+
+        <div>
+            <p>سعر المنتج بالمصري: <span id="egy">0</span> جنية</p>
+            <p>سعر المنتج عند البيع: <span id="price">0</span> جنية</p>
+            <p>سعر المنتج بعد الخصم: <span id="discount_price">0</span> جنية</p>
+            <p>نسبة الخصم: <span id="discount">0</span>%</p>
+            <p>الربح: <span id="profit_result">0</span> جنية</p>
+        </div>
+        <p style="text-align: center;">السعر <span id="discount_price2">0</span> بدلا من <span id="price2">0</span></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
